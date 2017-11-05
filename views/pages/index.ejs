@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <% include ../partials/head %>
+        </head>
+        <body class="container">
+            <header>
+                <% include ../partials/header %>
+            </header>
+            <main>
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="jumbotron">
+                            <h1><b>List of Students</b></h1>
+                            <ul>
+                                <% Student.forEach(function(Student) { %>
+                                    <li>Student Name: <%= Student.fname %> <%= Student.lname %></li>
+                                    <li>Gender:  <%= Student.gender %> </li>
+                                    <li>Course:  <%= Student.course %></li>
+                                    <li>Level:  <%= Student.level %></li>
+                                    <a href="/students/<%= Student.id %>"><b>Edit</b></a>|<a href="/student/<%= Student.id %>" ><b>Delete</b></a>
+
+                                    <br><br>
+                                <% }); %>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="well">
+                            <h3><a href="/create">Add a New Student</a> </h3>
+                        </div>
+                    </div>
+
+                </div>
+            </main>
+
+            <footer>
+                <% include ../partials/footer %>
+            </footer>
+        </body>
+    </html>

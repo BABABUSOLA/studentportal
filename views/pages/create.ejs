@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <% include ../partials/head %>
+        </head>
+        <body class="container">
+            <header>
+                <% include ../partials/header %>
+            </header>
+            <main>
+            <div>
+
+
+              <form action="/students" method="post">
+
+                    <label for="fname">First Name:</label>
+                    <input type="text" id="fname" name="fname" placeholder="Enter your first name" required />
+                    <br />
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="name" name="lname"  placeholder="Enter your last name" required/>
+                    <br />
+                    <label for="gender">Gender:</label>
+                    <select name="gender" id="gender" required>
+                      <option value="0" disable>Select Gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                    </select>
+                    <br />
+                    <label for="level">Level:</label>
+                    <select name="level" id="level" required>
+                      <option value="0" disable >Select Level</option>
+                      <option value="100 level">100 level</option>
+                      <option value="200 level">200 level</option>
+                      <option value="300 level">300 level</option>
+                      <option value="400 level">400 level</option>
+                    </select>
+                    <br />
+                    <label for="course">Course:</label>
+                    <select name="course" id="course" required>
+                      <option value="0" disable >Select Course of Study</option>
+                      <option value="Accounting">Accounting</option>
+                      <option value="Agriculture">Agriculture</option>
+                      <option value="Computer & Infomation System">Computer and Infomation System</option>
+                      <option value="Software Engineering">Software Engineering</option>
+                      <option value="Business Analyst">Business Analyst</option>
+                      <option value="Project Management">Project Management</option>
+                    </select>
+                    <br />
+
+                    <input type="submit" value="Create Profile" />
+              </form>
+            </div>
+
+         </main>
+      </body>
+   </html>

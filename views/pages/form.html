@@ -1,0 +1,40 @@
+<div>
+<form action="/students" method="post" enctype="multipart/form-data">
+
+    <label for="fname">First Name:</label>
+    <input type="text" id="student[fname]" name="student[fname]" value=""  placeholder="Enter your first name" required />
+    <br />
+    <label for="lname">Last Name:</label>
+    <input type="text" id="name" name="student[lname]"  placeholder="Enter your last name" required/>
+    <br />
+    <label for="gender">Gender:</label>
+    <select name="student[gender]" id="gender" required>
+      <option value="0" >Select Gender</option>
+      <option value="Male">Male</option>
+      <option value="Female">Female</option>
+    </select>
+    <br />
+    <label for="level">Level:</label>
+    <select name="student[level]" id="level" required>
+      <option value="0" >Select Level</option>
+      <option value="100level">100 level</option>
+      <option value="200level">200 level</option>
+      <option value="300level">300 level</option>
+      <option value="400level">400 level</option>
+    </select>
+    <br />
+    <label for="course">Course:</label>
+    <select name="student[course]" id="course" required>
+      <option value="0" >Select Course of Study</option>
+      <option value="Accounting">Accounting</option>
+      <option value="Agriculture">Agriculture</option>
+      <option value="Computer and Infomation System">Computer and Infomation System</option>
+      <option value="Software Engineering">Software Engineering</option>
+      <option value="Business Analyst">Business Analyst</option>
+      <option value="Project Management">Project Management</option>
+    </select>
+    <br />
+
+    <input type="submit" value="Create Profile" />
+</form>
+</div>

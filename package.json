@@ -1,0 +1,36 @@
+{
+  "name": "todolistapi",
+  "version": "1.0.0",
+  "description": "learning api and how to upload to heroku",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BABABUSOLA/todolist.git"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "express",
+    "mongdb"
+  ],
+  "author": "Oluwabusola Ajayi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BABABUSOLA/todolistapi/issues"
+  },
+  "homepage": "https://github.com/BABABUSOLA/todolistapi#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-validator": "^4.3.0",
+    "formidable": "^1.1.1",
+    "mongoose": "^4.12.4"
+  }
+}
