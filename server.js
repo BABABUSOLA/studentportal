@@ -28,9 +28,12 @@ var express = require('express'),
     var routes = require('./api/routes/todoListRoutes'); //importing route
     routes(app); //register the route
 
-app.listen(port);
+// app.listen(port);
+server.listen(port, function() {
+    console.log("App is running on port " + port);
+});
 
-console.log('todo list RESTful API server started on: ' + port);
+// console.log('todo list RESTful API server started on: ' + port);
 
 app.use(function(req,res){
         res.status(404).send({url: req.originalUrl + 'not found'})

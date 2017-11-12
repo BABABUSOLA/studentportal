@@ -1,9 +1,10 @@
 {
-  "name": "todolistapi",
+  "name": "studentportal",
   "version": "1.0.0",
   "description": "learning api and how to upload to heroku",
   "main": "server.js",
   "scripts": {
+    "start": "node server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -19,9 +20,9 @@
   "author": "Oluwabusola Ajayi",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/BABABUSOLA/todolistapi/issues"
+    "url": "https://github.com/BABABUSOLA/studentportal"
   },
-  "homepage": "https://github.com/BABABUSOLA/todolistapi#readme",
+  "homepage": "https://github.com/BABABUSOLA/studentportal#readme",
   "devDependencies": {
     "nodemon": "^1.12.1"
   },
@@ -31,6 +32,7 @@
     "express": "^4.16.2",
     "express-validator": "^4.3.0",
     "formidable": "^1.1.1",
+    "log4js": "^2.3.11",
     "mongoose": "^4.12.4"
   }
 }
